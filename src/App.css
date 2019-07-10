@@ -1,33 +1,44 @@
-.App {
-  text-align: center;
+.app {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.close {
+    position: absolute;
+    right: 0.5%;
+    top: 0.5%;
 }
 
-.App-link {
-  color: #61dafb;
+.horizontal {
+    background-image: url('https://static.aviapark.com/files/155333/960x576_1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vertical {
+    background-image: url('https://static.aviapark.com/files/155333/nc_ss19_620x960px_1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.progress__bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    width: 99.5vw;
+    max-height: 99.5vh; /*or auto*/
 }
